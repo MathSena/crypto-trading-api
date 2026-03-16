@@ -72,4 +72,36 @@ public class TradingEnums {
       return label;
     }
   }
+
+  public enum StrategyType {
+    SNIPER_SCALP("Sniper Scalp 🎯"),
+    TREND_RIDER("Trend Rider 🚢"),
+    AGUARDANDO("Aguardando ⏳");
+
+    private final String label;
+
+    StrategyType(String label) {
+      this.label = label;
+    }
+
+    public String getLabel() {
+      return label;
+    }
+  }
+
+  public enum StrategyStatus {
+    ACTIVE("Sinal Ativo ✅"),
+    WAITING("Aguardando Gatilho ⏳"),
+    BLOCKED("Bloqueado 🚫");
+
+    private final String label;
+
+    StrategyStatus(String label) {
+      this.label = label;
+    }
+
+    public String getLabel() {
+      return label;
+    }
+  }
 }
